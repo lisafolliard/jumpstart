@@ -1,5 +1,5 @@
 class ImagesController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   def new
     @user = User.find(params[:user_id])
@@ -37,10 +37,10 @@ class ImagesController < ApplicationController
   #     redirect_to user_path(@user)
   # end
   #
-  # private
-  #
-  # def image_params
-  #   params.require(:image).permit(:image, :description)
-  # end
+  private
+
+  def image_params
+    params.require(:image).permit(:image, :description)
+  end
 
 end
