@@ -561,6 +561,35 @@
         1,
         null
       ],
+      "/Users/lisaf13/Desktop/jump_start/spec/features/edit_image_pages_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/lisaf13/Desktop/jump_start/spec/models/image_spec.rb": [
         1,
         null,
@@ -673,6 +702,6 @@
         null
       ]
     },
-    "timestamp": 1445663837
+    "timestamp": 1445664240
   }
 }
