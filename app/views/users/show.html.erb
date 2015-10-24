@@ -10,7 +10,7 @@
 
         <% if current_user == @user %>
           <li><%= link_to 'Edit', edit_user_image_path(@user, image) %></li>
-          <li><%= link_to "Delete", user_image_path(@user, image), :method => 'delete' %></li>
+          <li><%= link_to 'Delete', user_image_path(@user, image), :method => 'delete' %></li>
         <% end %>
       </div>
     <% end %>
