@@ -1,12 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/lisaf13/Desktop/jump_start/spec/models/user_spec.rb": [
+      "/Users/lisaf13/Desktop/jump_start/spec/models/image_spec.rb": [
         1,
         null,
         1,
-        null,
         2,
+        2,
+        null,
         null,
         null
       ],
@@ -531,8 +532,29 @@
       "/Users/lisaf13/Desktop/jump_start/app/helpers/application_helper.rb": [
         1,
         null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/app/models/image.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null
       ]
     },
-    "timestamp": 1445661531
+    "timestamp": 1445661841
   }
 }
