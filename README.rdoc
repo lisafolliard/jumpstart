@@ -1,28 +1,47 @@
-== README
+# jumpstart
+Version 1.0, 23 October 2015
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By Lisa Folliard
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+An website that allows users to upload their artwork images and have community peers and professionals critique the work with the goal of improving quality.
 
-* System dependencies
+## Setup
+* Clone this repository
+* Run the following commands:
+```
+'bundle install' to install necessary dependencies
+'postgres' to run postgres server in background
+'rake db:init' to run rake db:drop, :create, :migrate, :seed and :test:prepare
+'rails s' to run rails server
+```
+* Navigate to `localhost:3000`
 
-* Configuration
+## Technologies Used
 
-* Database creation
+Ruby, RSpec, Rails, Capybara, Postgres, Rake, Active Record
 
-* Database initialization
+### Legal
 
-* How to run the test suite
+Copyright (c) 2015 **Lisa Folliard**
 
-* Services (job queues, cache servers, search engines, etc.)
+This software is licensed under the MIT license.
 
-* Deployment instructions
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* ...
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
