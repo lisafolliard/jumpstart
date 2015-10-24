@@ -1,12 +1,13 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '6a952f16ee71122bc2d65e78a4e41bdd5b66cb4cbda3b0c02af5836f900f21db39dd796eaf20398d386bb1845d971ffb3c1eb1796d6d0610617e5e2099d10aaf'
+  # config.secret_key = '64c7ac1d47dca79e462c685ed358162b30ced3348074b7535dbe15cf2e6a25f6bfe6b59b1ff496a6d9896751afe8cbf4b983869f58561fcd6c3cf3bea78224b1'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -22,6 +23,8 @@ Devise.setup do |config|
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
   require 'devise/orm/active_record'
+
+  config.authentication_keys = [:username]
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -43,12 +46,12 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
-  config.case_insensitive_keys = [:email]
+  config.case_insensitive_keys = [:username]
 
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
-  config.strip_whitespace_keys = [:email]
+  config.strip_whitespace_keys = [:username]
 
   # Tell if authentication through request.params is enabled. True by default.
   # It can be set to an array that will enable params authentication only for the
@@ -99,7 +102,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '6432311167bf9f6d10eeb634d9cac513901a7bd0a4bf424160bd602a6fa67c0bcfe16f7ccdfef3f92014abc9930ed79c1245ab883d587b4e50127c820a7aed0d'
+  # config.pepper = 'ff36264bf437d53ec99c4b28dbe504fd9317165c8c967379148dff528052234d0da198f8542aede87bb43d9f11aa4514d120902c5fe56764c6013b0481389465'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
