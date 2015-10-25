@@ -179,6 +179,7 @@
         null,
         null,
         null,
+        1,
         null
       ],
       "/Users/lisaf13/Desktop/jump_start/config/initializers/assets.rb": [
@@ -526,16 +527,10 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/factories.rb": [
-        1,
-        1,
+      "/Users/lisaf13/Desktop/jump_start/config/routes.rb": [
         1,
         1,
         null,
-        null
-      ],
-      "/Users/lisaf13/Desktop/jump_start/config/routes.rb": [
-        1,
         1,
         null,
         1,
@@ -555,77 +550,8 @@
         1,
         null,
         1,
-        null
-      ],
-      "/Users/lisaf13/Desktop/jump_start/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/lisaf13/Desktop/jump_start/spec/features/edit_image_pages_spec.rb": [
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/lisaf13/Desktop/jump_start/spec/models/image_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        null,
-        2,
-        null
-      ],
-      "/Users/lisaf13/Desktop/jump_start/app/models/image.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null
-      ],
-      "/Users/lisaf13/Desktop/jump_start/spec/models/user_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        2,
-        2,
-        null
-      ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/static_controller.rb": [
-        1,
-        1,
-        null,
-        2,
         null,
         null,
         null
@@ -646,10 +572,15 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/users_controller.rb": [
+      "/Users/lisaf13/Desktop/jump_start/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/app/controllers/about_controller.rb": [
         1,
         1,
-        1,
+        null,
+        null,
         null,
         null
       ],
@@ -700,8 +631,92 @@
         null,
         null,
         null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/app/controllers/static_controller.rb": [
+        1,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/app/controllers/users_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/app/models/image.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/spec/factories.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/spec/features/edit_image_pages_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/spec/models/image_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        2,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        2,
+        null
       ]
     },
-    "timestamp": 1445664240
+    "timestamp": 1445807498
   }
 }
