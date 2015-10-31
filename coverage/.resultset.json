@@ -661,6 +661,15 @@
         1,
         null,
         1,
+        1,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/app/models/review.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
         null
       ],
       "/Users/lisaf13/Desktop/jump_start/spec/factories.rb": [
@@ -710,6 +719,16 @@
         2,
         null
       ],
+      "/Users/lisaf13/Desktop/jump_start/spec/models/review_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        2,
+        null
+      ],
       "/Users/lisaf13/Desktop/jump_start/spec/models/user_spec.rb": [
         1,
         null,
@@ -720,6 +739,6 @@
         null
       ]
     },
-    "timestamp": 1446334689
+    "timestamp": 1446334996
   }
 }
