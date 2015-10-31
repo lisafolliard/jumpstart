@@ -20,5 +20,5 @@
 <hr>
 
     <% if current_user == @user %>
-    <%= link_to "Add an image", new_user_image_path(@user) %>
+    <%= link_to "Add an image", new_user_image_path(@user), remote: true, id: 'new-image-link' %>
     <% end %>

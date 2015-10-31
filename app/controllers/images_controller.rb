@@ -10,7 +10,10 @@ class ImagesController < ApplicationController
     @user = User.find(params[:user_id])
     @image = @user.images.new(image_params)
     if @image.save
-      redirect_to root_path
+      respond_to do |format|
+        format.html { redirect_to user_path(@image.user) }
+        format.js
+      end
     else
       render :new
     end
@@ -36,7 +39,7 @@ class ImagesController < ApplicationController
     @image.destroy
       redirect_to user_path(@user)
   end
-  
+
   private
 
   def image_params
