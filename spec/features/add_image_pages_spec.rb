@@ -4,7 +4,7 @@ describe "add an image" do
   it "adds an image to user page" do
     login_user
     click_link 'Cat'
-    click_link "Add an image"
+    click_link "Add Image"
     image = FactoryGirl.create(:image)
     click_on 'Save'
     expect(page).to have_content "Cat"

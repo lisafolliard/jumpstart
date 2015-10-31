@@ -9,8 +9,8 @@
           <li><%= image.description %></li>
 
         <% if current_user == @user %>
-          <li><%= link_to 'Edit', edit_user_image_path(@user, image) %></li>
-          <li><%= link_to 'Delete', user_image_path(@user, image), :method => 'delete' %></li>
+          <li><%= link_to 'Edit Image', edit_user_image_path(@user, image) %></li>
+          <li><%= link_to 'Delete Image', user_image_path(@user, image), :method => 'delete' %></li>
         <% end %>
       </div>
     <% end %>
@@ -20,5 +20,5 @@
 <hr>
 
     <% if current_user == @user %>
-    <%= link_to "Add an image", new_user_image_path(@user), remote: true, id: 'new-image-link' %>
+    <%= link_to "Add Image", new_user_image_path(@user), remote: true, id: 'new-image-link' %>
     <% end %>

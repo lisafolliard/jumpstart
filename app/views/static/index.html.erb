@@ -6,15 +6,17 @@
 <div class='container'>
 <%= link_to "Sort by Date Added", :sort => "created_at" %>
 
-<br><br>
-
-  <ul>
-    <% @images.each do |image| %>
-      <div class='col-sm-4'>
-        <li><%= link_to image_tag(image.image), user_path(image.user)  %></li>
-      </div>
-    <% end %>
-  </ul>
+<br>
+<div class='image-main'>
+    <ul>
+      <% @images.each do |image| %>
+        <div class='col-sm-4'>
+          <li><%= link_to image_tag(image.image), user_path(image.user)  %></li>
+          <li><%=  link_to image.user.username.titleize, user_path(image.user) %></li>
+        </div>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
 <hr>
