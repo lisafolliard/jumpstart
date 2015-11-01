@@ -1,5 +1,11 @@
 class ImagesController < ApplicationController
   # before_action :authenticate_user!
+  def index
+  end
+
+  def show
+    @image = Image.find(params[:id])
+  end
 
   def new
     @user = User.find(params[:user_id])
