@@ -14,10 +14,6 @@
           <% end %>
         </ul>
 
-
-
-
-
         <% if current_user == @user %>
           <li><%= link_to 'Add Review', new_image_review_path(image) %></li>
           <li><%= link_to 'Edit Image', edit_user_image_path(@user, image) %></li>

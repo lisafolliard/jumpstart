@@ -1,13 +1,15 @@
 require 'rails_helper'
 
 describe "add an image" do
-  it "adds an image to user page" do
+  it "adds an image to user page", js: true do
     login_user
     click_link 'Cat'
     click_link "Add Image"
-    image = FactoryGirl.create(:image)
+    # image = FactoryGirl.create(:image)
+    fill_in "Description", with: 'flower'
+    page.attach_file("Image", 'spec/fixtures/images/flowers.jpg')
     click_on 'Save'
-    expect(page).to have_content "Cat"
+    expect(page).to have_content "flower"
   end
 
   def login_user
