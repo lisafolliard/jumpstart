@@ -1,0 +1,8 @@
+
+<%= form_for [@image, @review] do |f| %>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <%= f.label :review %>
+  <%= f.text_field :review %>
+  <%= f.submit "Save" %>
+<% end %>

@@ -8,7 +8,18 @@
         <li><%= link_to image_tag(image.image), user_image_path(@user, image) %></li>
         <li><%= image.description %></li>
 
+        <ul>
+          <% image.reviews.each do |review| %>
+            <li>Critique Notes by <%= review.author.titleize %>: <%= review.review %> </li>
+          <% end %>
+        </ul>
+
+
+
+
+
         <% if current_user == @user %>
+          <li><%= link_to 'Add Review', new_image_review_path(image) %></li>
           <li><%= link_to 'Edit Image', edit_user_image_path(@user, image) %></li>
           <li><%= link_to 'Delete Image', user_image_path(@user, image), :method => 'delete' %></li>
         <% end %>
