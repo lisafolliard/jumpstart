@@ -1,22 +1,24 @@
-<h2>About <%= @user.username.titleize %></h2>
+<h2>Artist <%= @user.username.titleize %></h2>
 <span class='user_about'><p>Pu got her start at age 4 when she painting all the walls in her bedroom with hand paint. Pu got her start at age 4 when she painting all the walls in her bedroom with hand paint. Pu got her start at age 4 when she painting all the walls in her bedroom with hand paint</p></span>
 
 <div class='row'>
   <ul>
     <% @user.images.each do |image| %>
       <div class='col-sm-4'>
-        <li><%= link_to image_tag(image.image), user_image_path(@user, image) %></li>
+        <li><%= image_tag(image.image) %></li>
         <li><%= image.description %></li>
 
         <ul>
           <% image.reviews.each do |review| %>
             <li>Critique Notes by <%= review.author.titleize %>: <%= review.review %> </li>
+            <li><i>Posted on: <%= review.created_at.strftime("%B %d, %Y")  %></i></li>
+            <br>
           <% end %>
         </ul>
 
         <% if current_user == @user %>
-          <li><%= link_to 'Add Review', new_image_review_path(image) %></li>
-          <li><%= link_to 'Edit Image', edit_user_image_path(@user, image) %></li>
+          <li><%= link_to 'Add Review', new_image_review_path(image), remote: true, id: 'new-review-link' %></li>
+          <li><%= link_to 'Resubmit', edit_user_image_path(@user, image) %></li>
           <li><%= link_to 'Delete Image', user_image_path(@user, image), :method => 'delete' %></li>
         <% end %>
       </div>
