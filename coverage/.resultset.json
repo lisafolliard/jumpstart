@@ -590,6 +590,7 @@
         1,
         12,
         8,
+        8,
         null,
         null
       ],
@@ -709,6 +710,27 @@
         1,
         9,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/lisaf13/Desktop/jump_start/app/models/image.rb": [
@@ -807,6 +829,7 @@
         1,
         1,
         1,
+        null,
         0,
         0,
         0,
@@ -853,6 +876,6 @@
         null
       ]
     },
-    "timestamp": 1446662649
+    "timestamp": 1446673263
   }
 }

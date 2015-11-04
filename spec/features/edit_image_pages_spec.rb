@@ -8,7 +8,8 @@ describe "edit an image" do
     fill_in "Description", with: 'flower'
     page.attach_file("Image", 'spec/fixtures/images/flowers.jpg')
     click_on 'Save'
-    click_on 'Resubmit'
+    find("input[type='submit']").click
+    # click_on 'Resubmit'
     fill_in 'Description', with: 'flowers'
     click_button 'Save'
     expect(page).to have_content "flowers"
