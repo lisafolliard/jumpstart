@@ -18,8 +18,8 @@
 
         <% if current_user == @user %>
           <li><%= link_to 'Add Review', new_image_review_path(image), remote: true, id: 'new-review-link' %></li>
-          <li><%= link_to 'Resubmit', edit_user_image_path(@user, image) %></li>
-          <li><%= link_to 'Delete Image', user_image_path(@user, image), :method => 'delete' %></li>
+          <li><%= link_to "<span class='glyphicon glyphicon-pencil'></span>".html_safe, edit_user_image_path(@user, image) %></li>
+          <li><%= link_to "<span class='glyphicon glyphicon-trash'></span>".html_safe, user_image_path(@user, image), :method => 'delete' %></li>
         <% end %>
       </div>
     <% end %>
