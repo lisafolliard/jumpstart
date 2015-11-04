@@ -78,8 +78,8 @@
         null,
         null,
         1,
-        11,
-        11,
+        12,
+        12,
         null,
         null,
         null,
@@ -733,10 +733,10 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/models/critics.rb": [
+      "/Users/lisaf13/Desktop/jump_start/app/models/critic.rb": [
         1,
         1,
-        null,
+        1,
         null,
         null,
         null,
@@ -860,7 +860,7 @@
         null,
         1,
         2,
-        null,
+        2,
         null,
         null,
         null,
@@ -896,6 +896,6 @@
         null
       ]
     },
-    "timestamp": 1446679648
+    "timestamp": 1446679740
   }
 }
