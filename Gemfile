@@ -12,6 +12,7 @@ gem 'hirb'
 gem 'textacular', '~> 3.0'
 gem 'devise'
 gem 'paperclip', '~> 4.1'
+gem 'geocoder'
 
 group :development do
   gem 'byebug'
