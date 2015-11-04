@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root 'static#index'
   get "/about" => "about#index"
+  get "/critics" => "critics#index"
 
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
+
+  resources :critics
 
   resources :users, only: [:show, :index] do
     resources :images
