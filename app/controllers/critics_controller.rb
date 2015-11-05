@@ -4,6 +4,7 @@ class CriticsController < ApplicationController
     @hash = Gmaps4rails.build_markers(@users) do |user, marker|
       marker.lat user.latitude
       marker.lng user.longitude
+      marker.infowindow critic.address
     end
   end
 
@@ -18,6 +19,12 @@ class CriticsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @critic = Critic.find(params[:id])
+    @critic.destroy
+      redirect_to critics_path(@critic)
   end
 
   private
