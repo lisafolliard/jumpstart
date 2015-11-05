@@ -6,6 +6,7 @@
 <div class='row'>
   <ul>
     <% @user.images.each do |image| %>
+    <div id='image_<%= image.id %>'>
       <div class='col-sm-4'>
         <li><%= image_tag(image.image) %></li>
         <li><%= image.description %></li>
@@ -24,6 +25,7 @@
           <li><%= link_to "<span class='glyphicon glyphicon-trash'></span>".html_safe, user_image_path(@user, image), :method => 'delete' %></li>
         <% end %>
       </div>
+    </div>
     <% end %>
   </ul>
 </div>
