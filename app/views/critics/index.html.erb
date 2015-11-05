@@ -36,27 +36,75 @@
     </center>
   </div>
 
+<!-- <div class='map-style'>
   <div style='width: 800px;'>
-    <div id="one_marker" style='width: 800px; height: 400px;'></div>
+    <div id="map" style='width: 800px; height: 400px;'></div>
   </div>
-
-<!-- <div class='row'>
-  <center>
-  <div class='col-md-12'>
-    <div style='width: 1000px;'>
-      <div id="map" style='width: 1000px; height: 500px;'></div>
-    </div>
-  </div>
-</center>
 </div> -->
 
+ <div class='row'>
+  <center>
+    <div class='col-md-12'>
+      <div class='map-style'>
+        <div style='width: 800px;'>
+          <div id="map" style='width: 800px; height: 400px;'></div>
+        </div>
+      </div>
+    </div>
+  </center>
+</div>
+
 <script type="text/javascript">
-handler = Gmaps.build('Google');
-handler.buildMap({ internal: {id: 'one_marker'}}, function(){
+var mapStyle = [
+  {
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {}
+];
+
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {
+    styles: mapStyle
+  },
+  internal: {id: 'map'}}, function(){
   markers = handler.addMarkers(<%=raw @hash.to_json %>);
   handler.bounds.extendWith(markers);
   handler.fitMapToBounds();
-});
-
-
+  });
 </script>

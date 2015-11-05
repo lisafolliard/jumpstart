@@ -8,7 +8,9 @@
 #     fill_in "Description", with: 'flower'
 #     page.attach_file("Image", 'spec/fixtures/images/flowers.jpg')
 #     click_on 'Save'
-#     find("input[type='submit']").click
+#     save_and_open_page
+#
+#     page.click_link('image-edit-id')
 #     # click_on 'Resubmit'
 #     fill_in 'Description', with: 'flowers'
 #     click_button 'Save'

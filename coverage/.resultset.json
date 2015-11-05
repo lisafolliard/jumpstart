@@ -78,8 +78,8 @@
         null,
         null,
         1,
-        14,
-        14,
+        15,
+        15,
         null,
         null,
         null,
@@ -549,6 +549,9 @@
         1,
         1,
         1,
+        1,
+        null,
+        1,
         null,
         1,
         null,
@@ -603,6 +606,42 @@
         1,
         null,
         null,
+        null,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jump_start/app/controllers/critics_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
         null,
         null
       ],
@@ -739,6 +778,10 @@
         1,
         1,
         1,
+        1,
+        null,
+        1,
+        1,
         null,
         null
       ],
@@ -853,6 +896,8 @@
         null,
         null,
         null,
+        null,
+        null,
         null
       ],
       "/Users/lisaf13/Desktop/jump_start/spec/models/critic_spec.rb": [
@@ -863,7 +908,7 @@
         2,
         2,
         2,
-        null,
+        2,
         null
       ],
       "/Users/lisaf13/Desktop/jump_start/spec/models/image_spec.rb": [
@@ -896,6 +941,6 @@
         null
       ]
     },
-    "timestamp": 1446679798
+    "timestamp": 1446765273
   }
 }
