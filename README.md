@@ -5,7 +5,7 @@ Version 1.0, 23 October 2015
 
 ## Description
 
-An website that allows users to upload their artwork images and have community peers and professionals critique the work with the goal of improving quality.
+An website that allows users to upload artwork images and have professionals critique their work with the goal of improving quality.
 
 ## Setup
 * Clone this repository

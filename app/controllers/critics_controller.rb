@@ -15,7 +15,7 @@ class CriticsController < ApplicationController
   def create
     @critic = Critic.new(critic_params)
     if @critic.save
-      redirect_to root_path
+      redirect_to critics_path(@critic)
     else
       render :new
     end

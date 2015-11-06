@@ -12,9 +12,9 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Address</th>
+        <th colspan="2">Name</th>
+        <th colspan="8">Description</th>
+        <th colspan="8">Address</th>
         <th colspan="2"></th>
       </tr>
     </thead>
@@ -22,10 +22,10 @@
     <tbody>
       <% @critics.each do |critic| %>
         <tr>
-          <td><%= critic.name %></td>
-          <td><%= critic.description %></td>
-          <td><%= critic.address %></td>
-          <td><%= link_to "<span class='glyphicon glyphicon-pencil'></span>".html_safe, edit_critic_path(critic) %>  <%= link_to "<span class='glyphicon glyphicon-trash'></span>".html_safe, critic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td colspan="2"><%= critic.name %></td>
+          <td colspan="8"><%= critic.description %></td>
+          <td colspan="8"><%= critic.address %></td>
+          <td><%= link_to "<span class='glyphicon glyphicon-pencil'></span>".html_safe, edit_critic_path(critic) %>  <%= link_to "<span class='glyphicon glyphicon-trash'></span>".html_safe, critic, method: :delete %></td>
         </tr>
       <% end %>
     </tbody>
@@ -40,7 +40,7 @@
 <div class='row'>
   <center>
   <div class='col-md-12'>
-    <div style='width: 800px;'>
+    <div class='map-style' style='width: 800px;'>
       <div id="map" style='width: 800px; height: 400px;'></div>
     </div>
   </div>
@@ -48,8 +48,6 @@
 </div>
 
 <script type="text/javascript">
-// var directionsDisplay = new google.maps.DirectionsRenderer();
-// var directionsService = new google.maps.DirectionsService();
 var mapStyle = [
   {
         "elementType": "labels",

@@ -45,9 +45,8 @@ li {
   list-style-type: none;
 }
 
-.map-style {
-	box-shadow: 1px red;
-	// border: 3px solid red;
+.map-style img {
+	box-shadow: none;
 }
 
 img {
@@ -55,7 +54,7 @@ img {
   // max-height: 250px;
   height: 250px;
   width: 250px;
-  // box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
   margin: 20px;
 }
 

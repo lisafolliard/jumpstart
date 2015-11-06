@@ -1,10 +1,11 @@
 <h1>jumpst<span class='title_font'>art</span></h1>
-<span class='site_about'><p>Portland artists can submit works of art to be reviewed by local art critics</p></span>
+<span class='site_about'><p>Portland artists can submit works of art to be reviewed by experienced local art critics</p></span>
 
 <hr>
 
 <div class='container'>
-<%= link_to "Sort by Date Added", :sort => "created_at" %>
+
+<li><%= link_to 'Sort by Artist Name', (:sort => 'image.user.username') %></li>
 
 <br>
 <div class='image-main'>

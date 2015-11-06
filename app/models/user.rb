@@ -5,10 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   validates_presence_of :username
-
   has_many :images
-
-  # before_create do |user|
-  #   user.name = user.login.capitalize if user.name.blank?
-  # end
 end
