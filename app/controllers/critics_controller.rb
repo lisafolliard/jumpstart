@@ -21,6 +21,20 @@ class CriticsController < ApplicationController
     end
   end
 
+  def edit
+    @critic = Critic.find(params[:id])
+  end
+
+  def update
+    @critic = Critic.find(params[:id])
+    if @critic.update(critic_params)
+      # redirect_to critics_path(@critic)
+      redirect_to critics_path(@critic)
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @critic = Critic.find(params[:id])
     @critic.destroy
