@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 
 body {
   // background: url('/assets/clay.jpg');
@@ -9,6 +10,7 @@ body {
 a {
 	// color: gray;
 	color: #666666;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 }
 
 a:hover {
@@ -19,7 +21,8 @@ a:hover {
 .image-main {
 	text-align: center;
 	font-size: 16px;
-	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	// font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-family: 'Amatic SC', cursive;
 }
 
 .about-page {
@@ -59,19 +62,25 @@ img {
 }
 
 h1 {
-  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  // font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
   text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 45px;
 }
 
 h2 {
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
   font-size: 30px;
   text-align: center;
+	color: #666666;
 }
 
 .title_font {
-  font-size: 60px;
-  font-family: 'Bad Script', cursive;
+  font-size: 40px;
+	color: #666666;
+  // font-family: 'Bad Script', cursive;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+
 }
 
 .user_about, .site_about {

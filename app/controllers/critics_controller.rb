@@ -8,6 +8,15 @@ class CriticsController < ApplicationController
     end
   end
 
+  def show
+    @critic = Critic.find(params[:id])
+    # @hash = Gmaps4rails.build_markers(@critics) do |critic, marker|
+    #  marker.lat critic.latitude
+    #  marker.lng critic.longitude
+    #  marker.infowindow critic.address
+    # end
+  end
+
   def new
     @critic = Critic.new
   end
