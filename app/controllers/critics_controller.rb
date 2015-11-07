@@ -52,6 +52,6 @@ class CriticsController < ApplicationController
 
   private
   def critic_params
-    params.require(:critic).permit(:name, :description, :address, :latitude, :longitude)
+    params.require(:critic).permit(:name, :description, :school, :address, :latitude, :longitude)
   end
 end
