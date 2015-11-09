@@ -14,6 +14,7 @@ gem 'devise'
 gem 'paperclip', '~> 4.1'
 gem 'gmaps4rails'
 gem 'geocoder'
+gem 'textacular', '~> 3.0'
 
 group :development do
   gem 'byebug'

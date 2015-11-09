@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'static#index'
+  root 'users#index'
   get "/about" => "about#index"
   get "/critics" => "critics#index"
 

@@ -3,6 +3,12 @@
 
 <hr>
 
+<% @search.each do |search| %>
+   <h3>Your search results:</h3>
+   <%= search.username %>
+   <% end %>
+   
+
 <div class='container'>
   <li><%= link_to 'Sort by Artist Name', :sort => 'user_id' %></li>
   <br>
