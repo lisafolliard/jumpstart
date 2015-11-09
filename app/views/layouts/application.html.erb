@@ -20,17 +20,21 @@
       <% unless current_user %>
         <li><%= link_to 'Login', new_user_session_path %></li>
         <li><%= link_to 'Sign up', new_user_registration_path %></li>
-      <% else %>
-      <li><%= form_tag(root_path, method: 'get', class: "navbar-form navbar-left", role: "search") do %>
-        <%= text_field_tag :query, params[:query], size: 25, placeholder: "Search for Artist", class: "form-control"%>
-        <%= submit_tag 'Search', class: 'btn btn-default' %>
-      <% end %></li>
 
+      <% else %>
 
 
         <li><%= link_to current_user.username.titleize, user_path(current_user) %></li>
         <li><%= link_to 'Logout',  destroy_user_session_path, method: 'delete' %></li>
       <% end %>
+
+
+      <li><%= form_tag root_path, method: 'get', class: "navbar-form navbar-left", role: "search" do %>
+        <%= text_field_tag :query, params[:query], size: 25, placeholder: "Search for Artist", class: "form-control"%>
+        <%= submit_tag 'Search', class: 'btn btn-default' %>
+      <% end %></li>
+
+      
     </ul>
     </div>
   </div>

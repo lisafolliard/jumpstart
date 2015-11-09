@@ -5,7 +5,8 @@ class UsersController < ApplicationController
     # @user = User.find(params[:id])
     if params[:query]
       @search = User.basic_search(params[:query])
-      # redirect_to root_path
+      # if 
+      redirect_to user_path(@search.first)
     else
       @search = []
     end
@@ -13,17 +14,15 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-
-
-
-    # if params[:search]
-    #       @users = User.search(params[:search]).order("created_at DESC")
-    #     else
-    #       @users = User.order("created_at DESC")
-    #     end
-
-
   end
+
+
+      # if params[:search]
+      #       @users = User.search(params[:search]).order("created_at DESC")
+      #     else
+      #       @users = User.order("created_at DESC")
+      #     end
+
 
   # def edit
   #   @user = User.find(params[:user_id])

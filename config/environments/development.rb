@@ -1,4 +1,6 @@
 Rails.application.configure do
+  config.action_mailer.delivery_method = :letter_opener
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -38,6 +40,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   Paperclip.options[:command_path] = "/usr/local/bin/convert"
