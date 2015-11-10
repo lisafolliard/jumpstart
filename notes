@@ -1,3 +1,4 @@
+<li><%= link_to 'Sort by Artist Name', :sort => 'user_id' %></li>
 
 
 <% @search.each do |search| %>
