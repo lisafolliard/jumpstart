@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
     if @review.save
       # redirect_to user_path(@image.user)
       respond_to do |format|
-        format.html { redirect_to user_path(@image.user) }
+        format.html { redirect_to user_image_path(@image.user, @image) }
         format.js
       end
     else
