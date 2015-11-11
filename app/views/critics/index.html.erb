@@ -22,7 +22,7 @@
     <tbody>
       <% @critics.each do |critic| %>
         <tr>
-          <td colspan="10"><%= link_to critic.name, critic_path(critic) %></td>
+          <td><%= link_to critic.name, critic_path(critic) %></td>
           <td><%= critic.school %></td>
           <td><%= critic.address %></td>
           <td><%= link_to "<span class='glyphicon glyphicon-pencil'></span>".html_safe, edit_critic_path(critic) %>  <%= link_to "<span class='glyphicon glyphicon-trash'></span>".html_safe, critic, method: :delete %></td>

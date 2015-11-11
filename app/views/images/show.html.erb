@@ -3,7 +3,8 @@
 
 
 
-    <center><%= image_tag(@image.image) %></center>
+    <center><div class='no_hover'><%= image_tag(@image.image) %></div></center>
+    <br>
     <ul>
       <% @image.reviews.each do |review| %>
         <li>Critique Notes by <%= review.author.titleize %>: <%= review.review %> </li>

@@ -7,7 +7,7 @@ body {
   // background-position: 50%, 20%;
 }
 
-a {
+a, td {
 	// color: gray;
 	color: #666666;
 	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
@@ -60,6 +60,16 @@ img {
   width: 250px;
   box-shadow: 10px 10px 5px #888888;
   margin: 20px;
+}
+
+img:hover {
+	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px black;
+}
+
+.no_hover {
+	box-shadow: none;
 }
 
 h1 {

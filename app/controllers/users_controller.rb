@@ -1,14 +1,13 @@
 class UsersController < ApplicationController
   def index
-    @images = Image.order(params[:sort])
+    # @images = Image.order(params[:sort])
+    @images = Image.all
     if params[:query]
       @search = User.basic_search(params[:query])
       redirect_to user_path(@search.first)
     else
       @search = []
     end
-    # if params[:query].blank?
-
   end
 
   def show
