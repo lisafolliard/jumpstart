@@ -6,7 +6,8 @@
 #     click_link 'Cat'
 #     click_link "Add Image"
 #     # image = FactoryGirl.create(:image)
-#     page.attach_file("Image", 'spec/fixtures/images/flowers.jpg')
+#     # page.attach_file("Image", 'spec/fixtures/images/flowers.jpg')
+#     attach_file "Image", 'spec/fixtures/images/flowers.jpg'
 #     fill_in "Description", with: 'flower'
 #     click_on 'Save'
 #     expect(page).to have_content "flower"

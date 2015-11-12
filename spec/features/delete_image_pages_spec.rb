@@ -9,6 +9,7 @@
 #     page.attach_file("Image", 'spec/fixtures/images/flowers.jpg')
 #     click_on 'Save'
 #     # find("#delete_image_test").click
+#     save_and_open_page
 #     page.first("#delete_image_test").click
 #
 #     # click_on 'Delete Image'

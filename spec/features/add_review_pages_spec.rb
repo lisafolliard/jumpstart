@@ -1,17 +1,22 @@
-# require 'rails_helper'
-#
+require 'rails_helper'
+
 # describe "add review to an image" do
 #   it "adds a review to an image on user page", js: true do
 #     login_user
 #     click_link 'Cat'
 #     click_link "Add Image"
+#     attach_file "Image", 'spec/fixtures/images/flowers.jpg'
 #     fill_in "Description", with: 'flower'
-#     page.attach_file("Image", 'spec/fixtures/images/flowers.jpg')
 #     click_on 'Save'
-#     click_link 'Add Review'
+#     click_on "Image", 'spec/fixtures/images/flowers.jpg'
+#
+#     save_and_open_page
+#
+#     click_link "Add Review"
 #     fill_in 'Author', with: "Ben Marks"
 #     fill_in 'Review', with: "Good work"
 #     click_on 'Save'
+#     save_and_open_page
 #     expect(page).to have_content "Good work"
 #   end
 #
