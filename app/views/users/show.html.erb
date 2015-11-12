@@ -17,7 +17,7 @@
         <li><%= image.description %></li>
 
         <% if current_user == @user %>
-          <li><%= link_to "<span id='edit_image_test' class='glyphicon glyphicon-pencil'></span>".html_safe, edit_user_image_path(@user, image) %></li>
+          <li><%= link_to "<span id: 'edit_image_test', class='glyphicon glyphicon-pencil'></span>".html_safe, edit_user_image_path(@user, image) %></li>
           <li><%= link_to "<span id='delete_image_test' class='glyphicon glyphicon-trash'></span>".html_safe, user_image_path(@user, image), :method => 'delete' %></li>
         <% end %>
       </div>
