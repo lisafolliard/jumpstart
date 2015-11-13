@@ -6,54 +6,37 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <div class='navbar navbar-default'>
-    <div class='container-fluid'>
-    <a class="navbar-brand" href="/">Home</a>
-    <a class="navbar-brand" href="/about"><i>Benefits of Critique</i></a>
-    <a class="navbar-brand" href="/critics">Art Critics</a>
+  <body>
+    <div class='navbar navbar-default'>
+      <div class='container-fluid'>
+      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/about"><i>Benefits of Critique</i></a>
+      <a class="navbar-brand" href="/critics">Art Critics</a>
 
-      <ul class='nav navbar-nav'>
-      </ul>
-      <!-- <ul class="nav navbar-nav navbar-right"> -->
-      <ul class="nav navbar-nav navbar-right">
-      <% unless current_user %>
-        <li><%= link_to 'Login', new_user_session_path %></li>
-        <li><%= link_to 'Sign up', new_user_registration_path %></li>
+        <ul class='nav navbar-nav'>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right"> -->
+        <ul class="nav navbar-nav navbar-right">
+            <li><%= form_tag root_path, method: 'get', class: "navbar-form navbar-left", role: "search" do %>
+              <%= text_field_tag :query, params[:query], size: 25, placeholder: "Search for Artist", class: "form-control"%>
+              <%= submit_tag 'Search', class: 'btn btn-default' %>
+            <% end %></li>
 
-      <% else %>
-
-
-        <li><%= link_to current_user.username.titleize, user_path(current_user) %></li>
-        <li><%= link_to current_user.email, edit_user_registration_path(current_user) %></li>
-        <li><%= link_to 'Logout',  destroy_user_session_path, method: 'delete' %></li>
-      <% end %>
-
-
-      <li><%= form_tag root_path, method: 'get', class: "navbar-form navbar-left", role: "search" do %>
-        <%= text_field_tag :query, params[:query], size: 25, placeholder: "Search for Artist", class: "form-control"%>
-        <%= submit_tag 'Search', class: 'btn btn-default' %>
-      <% end %></li>
-
-
-    </ul>
+          <% unless current_user %>
+            <li><%= link_to 'Login', new_user_session_path %></li>
+            <li><%= link_to 'Sign up', new_user_registration_path %></li>
+          <% else %>
+            <li><%= link_to current_user.username.titleize, user_path(current_user) %></li>
+            <li><%= link_to 'Logout',  destroy_user_session_path, method: 'delete' %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class='container'>
-
-    <h5><%= flash[:alert] %></h5>
-    <h5><%= flash[:notice] %></h5>
-
-    <%= yield %>
-  </div>
-</body>
-
-<!-- <footer class='footer'>TEST FOOTER
-  <div class='container'>
-    <p>
-      HIIIIII
-    </p>
-  </div>
-</footer> -->
+    <div class='container'>
+      <h5><%= flash[:alert] %></h5>
+      <h5><%= flash[:notice] %></h5>
+        <%= yield %>
+    </div>
+  </body>
 </html>
