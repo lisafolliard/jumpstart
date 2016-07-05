@@ -1,11 +1,11 @@
 # jumpstart
-Version 1.0, 23 October 2015
+October 23, 2015
 
 #### By Lisa Folliard
 
 ## Description
 
-A website that allows users to upload artwork images and have professionals critique their work with the goal of improving quality.
+A website that allows users to create a login/password, upload artwork images, and have professionals critique their work.
 
 ## Setup
 * Clone this repository

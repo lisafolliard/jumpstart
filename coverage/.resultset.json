@@ -1,26 +1,26 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/lisaf13/Desktop/jump_start/spec/features/critics/add_new_critic_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/features/critics/add_new_critic_spec.rb": [
         1,
         null,
         1,
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/rails_helper.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -99,14 +99,14 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/environment.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/application.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/application.rb": [
         1,
         null,
         1,
@@ -143,12 +143,12 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/boot.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/environments/test.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/environments/test.rb": [
         1,
         null,
         null,
@@ -193,7 +193,7 @@
         1,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/assets.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -206,7 +206,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/backtrace_silencers.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -215,12 +215,12 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/cookies_serializer.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/devise.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -487,13 +487,13 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/filter_parameter_logging.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/inflections.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -511,18 +511,18 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/mime_types.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/session_store.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/initializers/wrap_parameters.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -538,7 +538,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/config/routes.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/config/routes.rb": [
         1,
         1,
         1,
@@ -557,7 +557,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/models/user.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/models/user.rb": [
         1,
         null,
         null,
@@ -571,7 +571,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/application_controller.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -593,11 +593,11 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/helpers/application_helper.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/about_controller.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/about_controller.rb": [
         1,
         1,
         null,
@@ -605,14 +605,14 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/critics_controller.rb": [
-        1,
-        1,
-        2,
-        2,
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/critics_controller.rb": [
         1,
         1,
         1,
+        1,
+        0,
+        0,
+        0,
         null,
         null,
         null,
@@ -626,26 +626,12 @@
         null,
         null,
         1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
         0,
         null,
         null,
         1,
         0,
         0,
-        null,
         0,
         null,
         0,
@@ -654,17 +640,31 @@
         null,
         1,
         0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
         0,
         0,
         null,
         null,
         1,
         1,
-        1,
+        0,
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/images_controller.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/images_controller.rb": [
         1,
         null,
         1,
@@ -722,7 +722,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/reviews_controller.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/reviews_controller.rb": [
         1,
         1,
         null,
@@ -752,7 +752,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/static_controller.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/static_controller.rb": [
         null,
         null,
         null,
@@ -779,7 +779,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/controllers/users_controller.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/users_controller.rb": [
         1,
         1,
         null,
@@ -826,7 +826,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/models/critic.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/models/critic.rb": [
         1,
         1,
         1,
@@ -839,7 +839,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/models/image.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/models/image.rb": [
         1,
         1,
         null,
@@ -852,7 +852,7 @@
         1,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/app/models/review.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/app/models/review.rb": [
         1,
         1,
         1,
@@ -860,7 +860,7 @@
         1,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/factories.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/factories.rb": [
         1,
         1,
         1,
@@ -868,7 +868,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/features/images/add_image_pages_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/features/images/add_image_pages_spec.rb": [
         1,
         null,
         1,
@@ -895,7 +895,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/features/images/delete_image_pages_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/features/images/delete_image_pages_spec.rb": [
         null,
         null,
         null,
@@ -925,7 +925,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/features/images/edit_image_pages_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/features/images/edit_image_pages_spec.rb": [
         1,
         null,
         1,
@@ -958,7 +958,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/features/reviews/add_review_pages_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/features/reviews/add_review_pages_spec.rb": [
         1,
         null,
         null,
@@ -992,7 +992,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/models/critic_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/models/critic_spec.rb": [
         1,
         null,
         1,
@@ -1003,7 +1003,7 @@
         null,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/models/image_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/models/image_spec.rb": [
         1,
         null,
         1,
@@ -1013,7 +1013,7 @@
         2,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/models/review_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/models/review_spec.rb": [
         1,
         null,
         1,
@@ -1023,7 +1023,7 @@
         2,
         null
       ],
-      "/Users/lisaf13/Desktop/jump_start/spec/models/user_spec.rb": [
+      "/Users/lisaf13/Desktop/jumpstart/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -1034,6 +1034,6 @@
         null
       ]
     },
-    "timestamp": 1447291818
+    "timestamp": 1466645899
   }
 }
