@@ -1,11 +1,13 @@
 # jumpstart
-October 23, 2015
 
-#### By Lisa Folliard
+##### October 23, 2015
+
+#### By _**Lisa Folliard**_
 
 ## Description
 
 A website that allows users to create a login/password, upload artwork images, and have professionals critique their work.
+
 
 ## Setup
 * Clone this repository
@@ -18,9 +20,17 @@ A website that allows users to create a login/password, upload artwork images, a
 ```
 * Navigate to `localhost:3000`
 
+
 ## Technologies Used
 
-Ruby, RSpec, Rails, Capybara, Postgres, Rake, Active Record
+* Ruby
+* Rails
+* PostgreSQL
+* Active Record
+* Rake
+* RSpec
+* Capybara
+
 
 ### Legal
 
